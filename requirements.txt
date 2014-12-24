@@ -1,0 +1,7 @@
+Flask==0.10.1
+flask-cors
+gunicorn==18.0
+requests
+lxml
+python-sunlight
+geopy

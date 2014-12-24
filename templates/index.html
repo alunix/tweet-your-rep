@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>tweet-your-rep <small>U.S. address parser</small></h1>
+
+
+    <div class='well'>
+      <p>If you live in IL, enter your address and find your State representatives and tweet at them.</p>
+
+      <form class="form-horizontal" role="form">
+        <div class="form-group">
+          <label for="input-address" class="col-md-2 control-label">Address</label>
+          <div class="col-md-8">
+            <input type="text" class="form-control" id="input-address" placeholder="123 Main St. Suite 100 Chicago, IL">
+          </div>
+          <div class="col-md-2">
+            <button  id='parse-address' type="submit" class="btn btn-success">Parse!</button>
+          </div>
+        </div>
+      </form>
+
+    </div>
+    <div id='results' class="" style="display: none;"></div>
+
+    <hr />
+    <div class='row'>
+      <div class='col-md-6'>
+        <h3>web api</h3>
+        <p>Want to use this tool for your own project? You can also parse addresses via our API. All responses are in JSON format.</p>
+
+        <p>How to use it:</p>
+        <pre>http://tweet-your-rep.herokuapp.com/api/?address=[ENTER YOUR ADDRESS HERE]</pre>
+
+        <p>Here's an example: <a href='http://tweet-your-rep.herokuapp.com/api/?address=222%20W%20Merchandise%20Mart%20Plaza%20Floor%2012%20Chicago%20IL'>222 W Merchandise Mart Plaza Floor 12 Chicago IL</a></p>
+      </div>
+    </div>
+
+{% endblock %}
+
+{% block extra_scripts %}
+  <script src="/static/js/tweet-your-rep-api.js"></script>
+{% endblock %}

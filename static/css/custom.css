@@ -1,0 +1,120 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 17px;
+}
+
+.csv-results { width: 100%; background-color:#ECF0F1; }
+
+.label:hover { text-decoration: none; }
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+.jumbotron li {
+  font-size: 16px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+.nowrap { white-space:nowrap; }
+
+/* Tables on Listing Pages */
+
+.listing td {
+  padding: 0.5em 0;
+  vertical-align: middle;
+}
+
+.bar {
+  padding: 0.4em 0;
+  position: relative;
+  width: 50%;
+}
+
+.bar span { 
+  background: #ecf0f1;
+  border-left: 1px solid #ecf0f1;
+  border-radius: 3px;
+  display: block;
+  font-weight: bold;
+  height: 100%;
+  overflow: visible;
+}
+
+.bar span strong { 
+  display: block; 
+  font-weight: normal; 
+  padding: 0.3em 0.5em; 
+}
+
+.listing .bar span strong { padding: 0.2em 0.5em; }
+
+.listing thead {
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.listing th span {
+  color: #027BB6;
+  cursor: pointer;
+}
+
+.riverways, .locations { width: 37%;}
